@@ -1,1 +1,37 @@
-hi
+//Md. Shahin Mia IT22037
+
+public class Car {
+    // Step 1: Private fields
+    private String model;
+    private int speed;
+
+    // Step 2: Public Constructor
+    public Car(String model, int speed) {
+        this.model = model;
+        this.speed = speed;
+    }
+
+    // Step 3: Getter for model
+    public String getModel() {
+        return model;
+    }
+
+    // Setter for model
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    // Getter for speed
+    public int getSpeed() {
+        return speed;
+    }
+
+    // Setter for speed (with simple validation)
+    public void setSpeed(int speed) {
+        if (speed >= 0) {
+            this.speed = speed;
+        } else {
+            System.out.println("Speed cannot be negative!");
+        }
+    }
+}
